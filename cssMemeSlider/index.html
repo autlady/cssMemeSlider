@@ -5,13 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="slider">
-        <div class="slides">
-            <img src="./img/cat1.jpg" alt="cat photo">
+    <div class="main">
+        <div class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="slides">           
+                        <input class= "radio" type="radio" name="radio" id="radio1" value="1" checked>         
+                        <input class= "radio" type="radio" name="radio" id="radio2">  
+                        <input class= "radio" type="radio" name="radio" id="radio3"> 
+                        <input class= "radio" type="radio" name="radio" id="radio4">    
+    
+                        <div class="slide s1">
+                            <img width=600; src="./img/cat1.jpg" alt="cat photo">
+                        </div>  
+                        <div class="slide">
+                            <img width=600; src="./img/cat2.jpg" alt="cat photo">
+                        </div>   
+                        <div class="slide">
+                            <img width=600; src="./img/cat3.jpg" alt="cat photo">
+                        </div>   
+                        <div class="slide">
+                            <img width=600; src="./img/cat4.jpg" alt="cat photo">
+                        </div>   
+                        
+                        <div class="navigation">
+                            <label class="radio-styles" for="radio1"></label>
+                            <label class="radio-styles" for="radio2"></label>
+                            <label class="radio-styles" for="radio3"></label>
+                            <label class="radio-styles" for="radio4"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div> 
 </body>
 </html>

@@ -1,0 +1,171 @@
+/* Reset and base styles  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+input,
+button,
+button:focus,
+input:focus {
+    outline: none;
+    font-family: inherit;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: inherit;
+}
+
+input[type="submit"] {
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    font-size: inherit;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Grid styles */
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 40px;
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.radio {
+    display: none;
+  }
+  
+  .radio-styles {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .radio:checked + .radio-styles {
+    background-color: black;
+    border: cornflowerblue 5px solid;
+  }
+  
+  .radio-styles:hover {
+    background-color: aliceblue;
+  }
+  
+  .radio:checked:hover + .radio-styles {
+    border-color: aliceblue;
+  }
+
+  .slider {
+    width: 1100px;
+    height: 600px;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+  }
+
+  .slide {
+    width: 25%;
+    transition: all .6s ease-in;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #radio1:checked ~ .s1 {
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ .s1 {
+    margin-left: -25%;
+  }
+
+  #radio3:checked ~ .s1 {
+    margin-left: -50%;
+  }
+
+
+  #radio4:checked ~ .s1 {
+    margin-left: -75%;
+  }
