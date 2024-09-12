@@ -79,6 +79,7 @@ img {
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-inline: 40px;
@@ -96,25 +97,36 @@ img {
 
 
 .slider {
-  width: 1100px;
-  height: 600px;
+  max-width: 68.75rem;
+  width: 100%;
+  height: 37.5rem;
+
+  /* height: auto; */
+
   overflow: hidden;
-  border: 10px solid #ccc;
+  border: 1rem solid cornflowerblue;
+  background-color: #000;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 1200px) {
+    width: 50rem;
+    height: 27rem;
+  }
 }
 
 
 .navigation {
-  transform: translate(0,-160%);
+  transform: translate(0,-100%);
   display: flex;
   justify-content: flex-end;
   align-items: end;
 }
 
 .slides {
+  padding: 1.2rem;
   width: 400%;
   height: 100%;
   display: flex;
@@ -123,13 +135,18 @@ img {
 .slide {
   height: 31.25rem;
   width: 25%;
+  /* height: auto; */
   transition: all .7s ease-in;
+
+  @media (max-width: 1200px) {
+    height: 20rem;
+  }
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 #radio1:checked ~ .slides .s1 {
@@ -189,11 +206,18 @@ img {
 #radio3:checked ~ .navigation > .b3 .dot,
 #radio4:checked ~ .navigation > .b4 .dot {
   background-color: black;
-  border: cornflowerblue 5px solid;
+  border: cornflowerblue 0.3125rem solid;
 }
 
 .slide__text {
-  font-size: 2rem;
+  margin-top: 1rem;
+  max-width: 70%;
+  font-size: 1.4rem;
   font-family: 'Arial';
+  color: white;
   font-weight: 600;
+  white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
 }
