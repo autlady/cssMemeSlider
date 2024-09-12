@@ -111,6 +111,7 @@ img {
   transform: translate(0,-160%);
   display: flex;
   justify-content: flex-end;
+  align-items: end;
 }
 
 .slides {
@@ -128,6 +129,7 @@ img {
 .slide img {
   width: 100%;
   height: 100%;
+  object-fit:contain;
 }
 
 #radio1:checked ~ .slides .s1 {
@@ -158,7 +160,7 @@ img {
 
   background-color: transparent;
   cursor: pointer;
-  margin: 0.625rem;
+  margin: 0.5rem;
 }
 
 .radio-styles .dot {
@@ -192,4 +194,6 @@ img {
 
 .slide__text {
   font-size: 2rem;
+  font-family: 'Arial';
+  font-weight: 600;
 }
