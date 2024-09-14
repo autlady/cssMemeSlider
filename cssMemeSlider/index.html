@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+<div class="main">
+  <div class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <input class="radio" type="radio" name="radio" id="radio1" value="1" checked>
+        <input class="radio" type="radio" name="radio" id="radio2" value="2">
+        <input class="radio" type="radio" name="radio" id="radio3" value="3">
+        <input class="radio" type="radio" name="radio" id="radio4" value="4">
+
+        <div class="slides">
+          <div class="slide s1">
+            <img src="./img/socks1.jpg" alt="photo">
+            <p class="slide__text">Хозяин подарил Добби носок, Добби свободен!!!</p>
+          </div>
+          <div class="slide">
+            <img src="./img/socks2.jpg" alt="photo">
+            <p class="slide__text">Ну зачем ты, не надо было так тратиться!</p>
+          </div>
+          <div class="slide">
+            <img src="./img/socks3.jpg" alt="photo">
+            <p class="slide__text">50 оттенков серого</p>
+          </div>
+          <div class="slide">
+            <img src="./img/socks4.jpg" alt="photo">
+            <p class="slide__text">Носки хирургические стерильные</p>
+          </div>
+        </div>
+        <div class="navigation">
+          <label class="radio-styles b1" for="radio1">
+            <span class="dot"></span>
+          </label>
+          <label class="radio-styles b2" for="radio2">
+            <span class="dot"></span>
+          </label>
+          <label class="radio-styles b3" for="radio3">
+            <span class="dot"></span>
+          </label>
+          <label class="radio-styles b4" for="radio4">
+            <span class="dot"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 </body>
 </html>
